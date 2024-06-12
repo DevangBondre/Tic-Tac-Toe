@@ -1,0 +1,19 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    background-color: #9ca3af;
+    user-select: none;
+  }
+
+
+h1{
+text-align: center;
+text-decoration: underline;
+font-weight: bold;
+letter-spacing: 3px;
+background-color: cyan;
+margin: 0;
+padding-top: 15px;
+padding-bottom: 10px;
+}
+
