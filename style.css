@@ -15,12 +15,10 @@ background-color: cyan;
 margin: 0;
 padding-top: 15px;
 padding-bottom: 10px;
+width: 100%;
 }
 
-.game{
-  margin-top: 50px;
 
-}
 
 .cell{
   border: 3px solid;
