@@ -1,7 +1,7 @@
 body, html {
     margin: 0;
     padding: 0;
-    background-color: #9ca3af;
+    background-color: #334155;
     user-select: none;
   }
 
@@ -17,3 +17,48 @@ padding-top: 15px;
 padding-bottom: 10px;
 }
 
+.game{
+  margin-top: 50px;
+
+}
+
+.cell{
+  border: 3px solid;
+  height: 90px;
+  width: 100px;
+  box-shadow: 0 0 0 2px;
+  background-color: #d4d4d4;
+  cursor: pointer;
+  font-size: 60px;
+  text-align: center;
+  padding-top: 10px;
+  font-family: "Noto Sans TC", sans-serif;
+}
+
+#cells{
+  display: grid;
+  width: 200px;
+  margin-left: 39%;
+  margin-right: 30%;
+  grid-template-columns:repeat(3,auto);
+ 
+}
+
+#restart{
+  height: 5vh;
+  width: 15vh;
+  margin-left: 46%;
+  margin-top: 2%;
+  border-radius: 13px;
+  font-weight: bold;
+  font-size: 1.3rem;
+  background-color: #bbf7d0;
+}
+
+#status{
+  text-align: center;
+  text-decoration: underline;
+  font-size: 1.5rem;
+  font-family: "Noto Sans TC", sans-serif;
+  color: red;
+}
