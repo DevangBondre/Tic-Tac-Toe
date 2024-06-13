@@ -1,24 +1,20 @@
 body, html {
-    margin: 0;
-    padding: 0;
-    background-color: #334155;
-    user-select: none;
-  }
-
-
-h1{
-text-align: center;
-text-decoration: underline;
-font-weight: bold;
-letter-spacing: 3px;
-background-color: cyan;
-margin: 0;
-padding-top: 15px;
-padding-bottom: 10px;
-width: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #334155;
+  user-select: none;
 }
 
-
+h1 {
+  text-align: center;
+  text-decoration: underline;
+  font-weight: bold;
+  letter-spacing: 3px;
+  background-color: cyan;
+  margin: 0;
+  padding: 15px 0;
+  width: 100%;
+}
 
 .cell{
   border: 3px solid;
@@ -35,28 +31,76 @@ width: 100%;
 
 #cells{
   display: grid;
-  width: 200px;
-  margin-left: 39%;
-  margin-right: 30%;
+  width: 100%;
+  max-width: 300px;
+  margin: 0 auto;
   grid-template-columns:repeat(3,auto);
- 
+  
 }
 
-#restart{
+#restart {
   height: 5vh;
-  width: 15vh;
-  margin-left: 46%;
-  margin-top: 2%;
+  width: 40vw;
+  max-width: 150px;
+  margin: 2% auto;
   border-radius: 13px;
   font-weight: bold;
   font-size: 1.3rem;
   background-color: #bbf7d0;
+  display: block;
 }
 
-#status{
+#status {
   text-align: center;
   text-decoration: underline;
   font-size: 1.5rem;
   font-family: "Noto Sans TC", sans-serif;
   color: red;
+  margin: 10px 0;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .cell {
+      height: 20vw;
+      width: 20vw;
+      font-size: 8vw;
+      padding-top: 5px;
+  }
+
+  #restart {
+      width: 50vw;
+      font-size: 1.2rem;
+  }
+
+  h1 {
+      font-size: 1.5rem;
+  }
+
+  #status {
+      font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .cell {
+      height: 25vw;
+      width: 25vw;
+      font-size: 10vw;
+      padding-top: 5px;
+  }
+
+  #restart {
+      width: 60vw;
+      font-size: 1rem;
+  }
+
+  h1 {
+      font-size: 1.2rem;
+      padding: 10px 0;
+  }
+
+  #status {
+      font-size: 1rem;
+  }
 }
